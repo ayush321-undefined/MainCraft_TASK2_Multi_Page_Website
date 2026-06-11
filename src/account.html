@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Create Account | Nexus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">Nexus</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+    <a href="account.html" class="nav-cta">Get Started</a>
+  </div>
+</nav>
+
+<div class="contact-hero">
+  <div class="container">
+    <div class="badge">Create Account</div>
+    <h1 style="margin-bottom:1rem">Join the <br><span class="gradient-text">Future</span></h1>
+    <p style="color:var(--muted);font-size:1.1rem;max-width:480px;margin:0 auto">Sign up to start using Nexus today and accelerate your development workflow.</p>
+  </div>
+</div>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.4rem;margin-bottom:2rem">Create your account</h3>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+            <div class="form-group"><label>First Name</label><input type="text" placeholder="James" required></div>
+            <div class="form-group"><label>Last Name</label><input type="text" placeholder="Kira" required></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="james@company.io" required></div>
+          <div class="form-group"><label>Password</label><input type="password" placeholder="••••••••" required></div>
+          <div class="form-group"><label>Confirm Password</label><input type="password" placeholder="••••••••" required></div>
+          <button type="submit" class="btn-primary" id="submitBtn" style="width:100%;padding:1rem;border-radius:12px;font-size:1rem">Create Account</button>
+          <div class="success-msg" id="successMsg">✅ Account created! Check your email to verify.</div>
+        </form>
+      </div>
+      <div>
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.4rem;margin-bottom:2rem">Why Nexus?</h3>
+        <div class="contact-info">
+          <div class="ci-card"><div class="ci-icon">⚡</div><div><h4>Fast Deployments</h4><p>Ship features in seconds with our edge network.</p></div></div>
+          <div class="ci-card"><div class="ci-icon">🔒</div><div><h4>Secure Platform</h4><p>End‑to‑end encryption and SOC2 compliance.</p></div></div>
+          <div class="ci-card"><div class="ci-icon">🤖</div><div><h4>AI Insights</h4><p>Get smart analytics and alerts.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <strong>Nexus</strong> · <a href="#" style="color:var(--muted)">Privacy</a> · <a href="#" style="color:var(--muted)">Terms</a></p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
